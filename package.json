@@ -1,0 +1,12 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "deploy:dev": "node deploy-commands-dev.js",
+    "deploy:prd": "node deploy-commands-prd.js",
+    "run:bot": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1"
+  }
+}
