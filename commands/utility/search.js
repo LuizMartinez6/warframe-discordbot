@@ -30,7 +30,6 @@ module.exports = {
       );
       await channel.send({
         embeds: [dropItemEmbed(place, itemName, rarity, chance)],
-        ephemeral: true,
       });
     } catch (error) {
       console.log(error);
