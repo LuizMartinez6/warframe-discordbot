@@ -3,7 +3,7 @@
   "scripts": {
     "deploy:dev": "node deploy-commands-dev.js",
     "deploy:prd": "node deploy-commands-prd.js",
-    "run:bot": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^1.6.2",
