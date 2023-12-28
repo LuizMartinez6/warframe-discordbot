@@ -25,8 +25,7 @@ module.exports = {
       const chance = response.data[0].chance;
 
       const channel = interaction.client.channels.cache.get(
-        interaction.channelId,
-        ephe
+        interaction.channelId
       );
       await channel.send({
         embeds: [dropItemEmbed(place, itemName, rarity, chance)],
