@@ -13,7 +13,7 @@ module.exports = {
     // console.log(interaction);
     try {
       const item = interaction.options.getString("input");
-
+      item = item.lowerCase();
       const response = await axios.get(`/drops/search/${item}`);
       if (response.length === 0) {
         return await interaction.reply(
@@ -32,7 +32,6 @@ module.exports = {
         embeds: [dropItemEmbed(place, itemName, rarity, chance)],
       });
     } catch (error) {
-      console.log(error.message);
       console.log(error);
       await interaction.reply("Ouve algum erro na hora da procura");
     }
