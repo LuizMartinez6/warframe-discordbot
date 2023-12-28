@@ -13,7 +13,6 @@ module.exports = {
     // console.log(interaction);
     try {
       const item = interaction.options.getString("input");
-      item = item.toLowerCase();
       const response = await axios.get(`/drops/search/${item}`);
       if (response.length === 0) {
         return await interaction.reply(
